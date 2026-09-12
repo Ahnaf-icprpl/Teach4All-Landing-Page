@@ -1,0 +1,23 @@
+{
+  "name": "teach4all",
+  "version": "1.0.0",
+  "description": "TEACH FOR ALL — Asisten Belajar AI Tanpa Batas Sinyal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "teach4all",
+    "education",
+    "ai",
+    "ejs",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

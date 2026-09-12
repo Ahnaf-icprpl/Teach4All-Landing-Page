@@ -1,0 +1,57 @@
+<section id="demo">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="label">03 — Coba sekarang</div>
+      <h2>Prototipe interaktif</h2>
+    </div>
+    <p class="measure" style="color:var(--ink-soft);margin-bottom:28px;">Ini adalah demo alur produk yang bisa kamu coba langsung. Nyalakan atau matikan "sinyal" di bawah untuk merasakan bagaimana pengalaman belajarnya tetap berjalan tanpa internet.</p>
+
+    <div class="demo-shell">
+      <div class="demo-top">
+        <div class="tabs" role="tablist">
+          <button class="tab-btn" role="tab" aria-selected="true" id="tabChat" onclick="showTab('chat')">Tanya asisten</button>
+          <button class="tab-btn" role="tab" aria-selected="false" id="tabQuiz" onclick="showTab('quiz')">Latihan soal</button>
+        </div>
+        <div class="net-toggle">
+          <span class="net-label" id="netLabel">Offline</span>
+          <button class="switch" id="netSwitch" onclick="toggleNet()" aria-label="Ubah status koneksi" role="switch" aria-checked="false"><span class="knob"></span></button>
+          <span class="net-label">Online</span>
+        </div>
+      </div>
+
+      <div class="demo-panel" id="panelChat">
+        <div class="chat-log" id="chatLog"></div>
+        <div class="chat-input-row">
+          <input type="text" id="chatInput" placeholder="Ketik pertanyaan pelajaran, mis. 'jelaskan fotosintesis'" onkeydown="if(event.key==='Enter'){sendChat();}">
+          <button class="btn btn-primary" onclick="sendChat()">Kirim</button>
+        </div>
+        <div class="chat-suggest">
+          <button class="chip" onclick="askChip(this)">2/3 + 1/4 berapa?</button>
+          <button class="chip" onclick="askChip(this)">Jelaskan fotosintesis</button>
+          <button class="chip" onclick="askChip(this)">Apa ibu kota Jawa Timur?</button>
+          <button class="chip" onclick="askChip(this)">Cara mudah perkalian</button>
+        </div>
+        <div class="demo-note">Catatan jujur: balasan asisten pada demo ini disimulasikan untuk menunjukkan alur dan nuansa produk. Pada versi produksi, jawaban dihasilkan oleh model bahasa kecil yang benar-benar berjalan di perangkat.</div>
+      </div>
+
+      <div class="demo-panel" id="panelQuiz" hidden>
+        <div class="quiz-head">
+          <span class="quiz-progress" id="quizProgress">Soal 1 dari 5</span>
+          <span class="quiz-progress" id="quizScore">Skor: 0</span>
+        </div>
+        <div class="quiz-q" id="quizQ"></div>
+        <div class="quiz-opts" id="quizOpts"></div>
+        <div class="quiz-feedback" id="quizFeedback"></div>
+        <div class="quiz-actions">
+          <button class="btn btn-ghost" id="quizNextBtn" onclick="nextQuestion()" disabled>Soal berikutnya</button>
+          <span class="net-label" style="color:var(--ink-soft);font-size:0.82rem;" id="quizHint">Jawab soal untuk melihat penjelasannya.</span>
+        </div>
+
+        <div class="sync-box">
+          <div class="sync-status" id="syncStatus">Progres tersimpan di perangkat ini. Belum disinkronkan.</div>
+          <button class="btn btn-ghost" onclick="syncProgress()">Sinkronkan sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

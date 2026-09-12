@@ -4,8 +4,8 @@
   "description": "TEACH FOR ALL — Asisten Belajar AI Tanpa Batas Sinyal",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+    "start": "node --env-file-if-exists=.env --env-file-if-exists=.env.local server.js",
+    "dev": "node --watch --env-file-if-exists=.env --env-file-if-exists=.env.local server.js"
   },
   "keywords": [
     "teach4all",
@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@clerk/express": "^2.1.67",
     "ejs": "^3.1.10",
     "express": "^4.21.2"
   }

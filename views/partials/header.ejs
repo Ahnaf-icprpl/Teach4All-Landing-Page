@@ -7,10 +7,18 @@
     <nav class="links">
       <a href="#masalah">Masalah</a>
       <a href="#solusi">Solusi</a>
-      <a href="#demo">Coba demo</a>
       <a href="#manfaat">Manfaat</a>
       <a href="#tim">Tim</a>
+      <div id="clerk-auth-controls" class="auth-controls">
+        <div id="clerk-signed-out" class="auth-buttons" style="display: none;">
+          <button id="clerk-signin-btn" class="btn btn-sm btn-ghost" type="button">Masuk</button>
+          <button id="clerk-signup-btn" class="btn btn-sm btn-primary" type="button">Daftar</button>
+        </div>
+        <div id="clerk-signed-in" class="auth-user" style="display: none;">
+          <div id="clerk-user-button"></div>
+        </div>
+      </div>
     </nav>
-    <button class="menu-btn" aria-label="Buka menu">☰</button>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">☰</button>
   </div>
 </header>

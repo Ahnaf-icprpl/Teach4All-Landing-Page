@@ -26,7 +26,7 @@ if (process.env.CLERK_PUBLISHABLE_KEY) {
 // Main landing page route
 app.get('/', (req, res) => {
   res.render('index', {
-    title: 'TEACH FOR ALL — Asisten Belajar AI Tanpa Batas Sinyal',
+    title: 'TEACH FOR ALL — Asisten Belajar AI dengan Koneksi Minimal',
     clerkPublishableKey: process.env.CLERK_PUBLISHABLE_KEY || ''
   });
 });

@@ -1,7 +1,7 @@
 {
   "name": "teach4all",
   "version": "1.0.0",
-  "description": "TEACH FOR ALL — Asisten Belajar AI Tanpa Batas Sinyal",
+  "description": "TEACH FOR ALL — Asisten Belajar AI dengan Koneksi Minimal",
   "main": "server.js",
   "scripts": {
     "start": "node --env-file-if-exists=.env --env-file-if-exists=.env.local server.js",

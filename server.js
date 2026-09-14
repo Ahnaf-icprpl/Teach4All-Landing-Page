@@ -31,6 +31,22 @@ app.get('/', (req, res) => {
   });
 });
 
+// Terms of Service route
+app.get(['/terms', '/tos', '/syarat-ketentuan'], (req, res) => {
+  res.render('terms', {
+    title: 'Syarat & Ketentuan (Terms of Service) — TEACH FOR ALL',
+    clerkPublishableKey: process.env.CLERK_PUBLISHABLE_KEY || ''
+  });
+});
+
+// Privacy Policy route
+app.get(['/privacy', '/privacy-policy', '/kebijakan-privasi'], (req, res) => {
+  res.render('privacy', {
+    title: 'Kebijakan Privasi (Privacy Policy) — TEACH FOR ALL',
+    clerkPublishableKey: process.env.CLERK_PUBLISHABLE_KEY || ''
+  });
+});
+
 // Protected user profile route example
 app.get('/api/me', (req, res) => {
   if (!process.env.CLERK_PUBLISHABLE_KEY) {

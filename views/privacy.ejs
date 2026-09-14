@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="legal-page-body">
+
+  <%- include('partials/header') %>
+
+  <main class="legal-main">
+    <div class="wrap">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Beranda</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Kebijakan Privasi</span>
+      </nav>
+
+      <!-- Page Header -->
+      <header class="legal-header">
+        <div class="section-head">
+          <div class="label">Dokumen Legalitas &bull; 02</div>
+          <div>
+            <h1 class="legal-title">Kebijakan Privasi (Privacy Policy)</h1>
+            <p class="legal-subtitle">Pedoman transparansi dan perlindungan data pengguna platform TEACH FOR ALL &mdash; Asisten Belajar AI dengan Konsumsi Bandwidth Minimal.</p>
+            <div class="legal-meta">
+              <span class="meta-tag">Versi 1.1</span>
+              <span class="meta-dot">&bull;</span>
+              <span>Berlaku efektif: September 2026</span>
+              <span class="meta-dot">&bull;</span>
+              <span>Dikelola oleh Tim Moklet Innovators (SMK Telkom Malang)</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content Layout -->
+      <div class="legal-container">
+        <article class="legal-article">
+          <!-- Summary Box -->
+          <div class="legal-summary-card">
+            <h3 class="summary-title">Komitmen Privasi Kami</h3>
+            <p>TEACH FOR ALL sangat menghargai privasi siswa, pendidik, dan komunitas sekolah, terutama di wilayah 3T. Kebijakan ini menjelaskan jenis informasi yang kami kumpulkan, bagaimana informasi tersebut diproses dengan prinsip minimalisasi data (data minimization), serta ketentuan akses percakapan untuk keperluan audit dan evaluasi acara resmi.</p>
+          </div>
+
+          <!-- Section 1 -->
+          <section class="legal-section">
+            <h2>1. Data yang Kami Kumpulkan</h2>
+            <p>Untuk mendukung fungsionalitas asisten belajar berbasis AI pada jaringan dengan konektivitas rendah, kami mengumpulkan data seminimal mungkin:</p>
+            <ul>
+              <li><strong>Informasi Akun (Authentication Data):</strong> ID pengguna, alamat surel, dan status sesi autentikasi yang dikelola secara aman oleh Clerk.</li>
+              <li><strong>Data Interaksi &amp; Riwayat Percakapan (Conversation Logs):</strong> Teks pertanyaan/kueri yang diajukan pengguna, jawaban atau penjelasan bimbingan yang dihasilkan oleh AI, materi latihan yang diakses, serta penanda waktu (timestamp).</li>
+              <li><strong>Data Teknis Hemat-Bandwidth:</strong> Status koneksi (online/offline), ukuran payload data terkirim, dan statistik sinkronisasi yang digunakan untuk memastikan keandalan transmisi di sinyal lemah.</li>
+            </ul>
+          </section>
+
+          <!-- Section 2: CRITICAL AUDIT & EVENT CLAUSE -->
+          <section class="legal-section highlight-section" id="conversation-access">
+            <div class="audit-badge">Klausul Khusus &bull; Hak Akses Percakapan</div>
+            <h2>2. Akses Percakapan untuk Keperluan Audit dan Evaluasi Acara</h2>
+            
+            <div class="audit-callout">
+              <div class="audit-callout-header">
+                <svg class="audit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+                <strong>Ketentuan Hak Akses TEACH FOR ALL (Audit &amp; Event Clause)</strong>
+              </div>
+              <p class="audit-callout-desc">
+                <strong>TEACH FOR ALL mempertahankan dan memiliki hak akses langsung terhadap seluruh rekaman percakapan dan interaksi AI (conversation history) dalam hal terjadinya audit teknis/keamanan (in the event of an audit) maupun untuk keperluan evaluasi dan verifikasi dalam acara atau kompetisi (the event).</strong>
+              </p>
+            </div>
+
+            <p>Dalam rangka menjamin integritas akademis, kepatuhan keselamatan anak, serta validitas teknis dalam ajang kompetisi, TEACH FOR ALL memberlakukan kebijakan akses percakapan sebagai berikut:</p>
+
+            <div class="audit-points-grid">
+              <div class="audit-point-card">
+                <h4>A. Akses dalam Hal Terjadinya Audit (Event of an Audit)</h4>
+                <p>Dalam kondisi dilakukannya audit, tim TEACH FOR ALL dan auditor berwenang berhak meninjau log percakapan untuk:</p>
+                <ul>
+                  <li><strong>Audit Keamanan &amp; Moderasi Konten:</strong> Memeriksa apakah terjadi penyalahgunaan AI untuk hal-hal yang membahayakan atau tidak pantas bagi peserta didik.</li>
+                  <li><strong>Audit Akuntabilitas Algoritma:</strong> Memeriksa keabsahan sumber jawaban AI, memastikan ketiadaan bias atau halusinasi informasi pada materi esensial sekolah.</li>
+                  <li><strong>Audit Kepatuhan Kebijakan:</strong> Memenuhi inspeksi mutu dari otoritas pendidikan atau mitra sekolah setempat.</li>
+                </ul>
+              </div>
+
+              <div class="audit-point-card">
+                <h4>B. Akses untuk Keperluan Acara / Kompetisi (The Event)</h4>
+                <p>Dalam konteks pameran, penjurian, dan evaluasi acara resmi (termasuk <em>Bali AI Tech Fest 2026</em>):</p>
+                <ul>
+                  <li><strong>Verifikasi Penjurian:</strong> Memberikan akses kepada dewan juri dan penilai resmi untuk memverifikasi performa bimbingan AI secara nyata.</li>
+                  <li><strong>Audit Efisiensi Bandwidth:</strong> Memvalidasi klaim penghematan data dan arsitektur koneksi minimal melalui analisis log transmisi kueri.</li>
+                  <li><strong>Uji Replikasi:</strong> Menampilkan contoh kasus percakapan edukasi (dengan penyamaran identitas pribadi) sebagai bukti capaian proyek inovasi.</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="audit-reassurance">Seluruh akses audit dan evaluasi acara dilakukan sesuai prinsip kerahasiaan data (confidentiality) dan tidak akan disalahgunakan untuk tujuan periklanan komersial pihak ketiga.</p>
+          </section>
+
+          <!-- Section 3 -->
+          <section class="legal-section">
+            <h2>3. Mekanisme Penyimpanan Lokal &amp; Sinkronisasi Rendah Data</h2>
+            <p>Prinsip arsitektur TEACH FOR ALL mengutamakan efisiensi:</p>
+            <ul>
+              <li><strong>Penyimpanan Sementara (Local-First Caching):</strong> Pada perangkat pengguna dengan sinyal minim, ringkasan percakapan dan latihan disimpan secara lokal di perangkat hingga koneksi internet yang memadai tersedia.</li>
+              <li><strong>Sinkronisasi Terkompresi:</strong> Ketika sinyal terhubung, data disinkronisasi ke server pusat dengan protokol kompresi ultra-ringan guna meminimalkan konsumsi kuota pengguna di daerah 3T.</li>
+              <li><strong>Retensi Data:</strong> Data percakapan disimpan selama masa operasional aktif platform dan evaluasi acara, serta dapat diarsipkan untuk kepentingan audit berkelanjutan.</li>
+            </ul>
+          </section>
+
+          <!-- Section 4 -->
+          <section class="legal-section">
+            <h2>4. Pembagian Data kepada Pihak Ketiga</h2>
+            <p>Kami tidak menjual, memperdagangkan, atau menyewakan data pribadi pengguna kepada pihak ketiga manapun. Data hanya dapat dibagikan kepada pihak-pihak berikut dalam kondisi terbatas:</p>
+            <ul>
+              <li><strong>Penyedia Infrastruktur Autentikasi (Clerk):</strong> Untuk verifikasi identitas akun dan manajemen sesi masuk.</li>
+              <li><strong>Auditor &amp; Dewan Juri Acara Resmi:</strong> Sebagaimana diatur pada Pasal 2, dalam hal berlangsungnya audit atau evaluasi acara resmi (Bali AI Tech Fest 2026).</li>
+              <li><strong>Otoritas Hukum &amp; Pendidikan:</strong> Apabila diwajibkan secara tegas oleh peraturan perundang-undangan Republik Indonesia.</li>
+            </ul>
+          </section>
+
+          <!-- Section 5 -->
+          <section class="legal-section">
+            <h2>5. Perlindungan Privasi Anak &amp; Pelajar di Bawah Umur</h2>
+            <p>Sebagian besar pengguna layanan kami adalah pelajar tingkat dasar dan menengah di daerah 3T. Oleh karena itu, kami menerapkan perlindungan ekstra:</p>
+            <ul>
+              <li>Tidak ada pelacakan perilaku untuk tujuan periklanan (zero ads, zero behavioural tracking).</li>
+              <li>Interaksi dengan asisten AI disaring melalui filter konten aman ramah anak (child safety filters).</li>
+              <li>Sekolah dan guru pendamping berhak meminta peninjauan aktivitas belajar siswa binaan mereka.</li>
+            </ul>
+          </section>
+
+          <!-- Section 6 -->
+          <section class="legal-section">
+            <h2>6. Hak Pengguna atas Data Pribadi</h2>
+            <p>Pengguna memiliki hak untuk:</p>
+            <ul>
+              <li>Meminta salinan data pribadi yang tersimpan dalam sistem kami.</li>
+              <li>Mengajukan perbaikan terhadap informasi akun yang tidak akurat.</li>
+              <li>Meminta penghapusan akun dan data terkait, kecuali jika data percakapan sedang dibutuhkan untuk proses audit aktif atau kewajiban verifikasi acara yang belum selesai.</li>
+            </ul>
+          </section>
+
+          <!-- Section 7 -->
+          <section class="legal-section">
+            <h2>7. Pembaruan Kebijakan Privasi</h2>
+            <p>Kebijakan Privasi ini dapat kami perbarui secara berkala seiring perkembangan fitur aplikasi atau kebutuhan audit lebih lanjut. Setiap perubahan signifikan akan kami informasikan dengan memperbarui tanggal "Berlaku efektif" pada bagian atas laman ini.</p>
+          </section>
+
+          <!-- Section 8 -->
+          <section class="legal-section">
+            <h2>8. Kontak Perlindungan Data</h2>
+            <p>Untuk pertanyaan, konsultasi privasi, atau permintaan terkait hak data, Anda dapat menghubungi:</p>
+            <div class="contact-box">
+              <p><strong>Tim Pengembang Moklet Innovators (TEACH FOR ALL)</strong></p>
+              <p>SMK Telkom Malang &bull; Provinsi Jawa Timur, Indonesia</p>
+              <p>Acara: Bali AI Tech Fest 2026</p>
+              <p>Email: <a href="mailto:privasi@teach4all.id" class="inline-link">privasi@teach4all.id</a> / <a href="mailto:kontak@teach4all.id" class="inline-link">kontak@teach4all.id</a></p>
+            </div>
+          </section>
+        </article>
+
+        <!-- Sidebar Navigation -->
+        <aside class="legal-sidebar">
+          <div class="sidebar-box">
+            <h4>Navigasi Dokumen</h4>
+            <nav class="sidebar-links">
+              <a href="#conversation-access" class="sidebar-highlight-link">
+                <span class="nav-indicator">&bull;</span>
+                <strong>Akses Percakapan (Audit &amp; Acara)</strong>
+              </a>
+              <a href="/privacy">Kebijakan Privasi</a>
+              <a href="/terms">Syarat &amp; Ketentuan</a>
+              <a href="/#solusi">Solusi Kami</a>
+              <a href="/#tim">Tim Pengembang</a>
+            </nav>
+          </div>
+
+          <div class="sidebar-box sidebar-note">
+            <h4>Kepatuhan Acara</h4>
+            <p>Sistem ini dirancang transparan untuk memenuhi standar etika dan evaluasi sistem cerdas pada <strong>Bali AI Tech Fest 2026</strong>.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+
+  <%- include('partials/scripts') %>
+
+</body>
+</html>
